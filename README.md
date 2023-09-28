@@ -5,7 +5,7 @@ HTML and CSS layout
 
 Lessons on the CSS language are collected in one playlist for your convenience.
   - Here you can easily learn the CSS3 language starting with the basics and
-  - concluding with a thorough understanding of Cascading Style Sheets * CSS.
+  - concluding with a thorough understanding of Cascading Style Sheets (CSS).
   - Learn many useful properties.
 
 https://www.youtube.com/playlist?list=PLuY6eeDuleINJ5hIlBJWopSWHWDJYz_XW
