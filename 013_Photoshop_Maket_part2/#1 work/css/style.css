@@ -1,0 +1,257 @@
+/****************************************************************************************
+ * style.css
+ * --------------------------------------------------------------------------------------
+ * Visual Studio Code
+ * HTML, CSS, JavaScript
+ * --------------------------------------------------------------------------------------
+ * Язык CSS для новичков ITDoctor (2022)
+ *
+ * Уроки по языку CSS собраны в одном плейлисте для вашего удобства. 
+ * Тут вы сможете легко выучить язык CSS3 начиная с основ и 
+ * завершая полным пониманием каскадных таблиц стилей * CSS. 
+ * Изучите много полезных свойств.
+ *
+ * https://www.youtube.com/playlist?list=PLuY6eeDuleINJ5hIlBJWopSWHWDJYz_XW
+ *
+ * --------------------------------------------------------------------------------------
+ * CSS GRADIENT (1)
+ * https://cssgradient.io
+ *
+ * Gradient Constructor (2)
+ * https://www.colorzilla.com/gradient-editor/
+ *
+ * Lorem Ipsum - Generator
+ * https://ru.lipsum.com/
+ *
+ * ---------------------------------------------------------------------------------------
+ * I C O N S:  
+ * F o n t e l l o - icon fonts generator (1)
+ * https://fontello.com/
+ *
+ * FONT A W E S O M E ICONS (2) - 6.4.2 (2023-09)
+ * https://fontawesome.com
+ * https://fontawesome.com/docs/web/setup/use-kit
+ * https://fontawesome.com/search
+ *
+ * ---------------------------------------------------------------------------------------
+ * VS CODE:
+ * ALT+SHIFT+F - авто-выравнивание СSS-кода 
+ * ALT+D - дублирование
+ * ALT+Z - перенос строки 
+ * CTRL+SPACE - браузер для файлов
+ * ---------------------------------------------------------------------------------------
+ * VS HTML to CSS (extension)
+ * Cope-Paste classes from HTML to CSS: CTRL+X(HTML) + CTRL+V(CSS)
+ * ---------------------------------------------------------------------------------------
+ * p20-auto-20 - padding
+ * m30-auto - margin
+ * lorem50 - шаблонный текст
+ * ****************************************************************************************
+ * Writing & Modification by sgiman (SCS) @ 2023-09
+ */
+
+/*
+ *  Приоритет: свеху-вниз!!!
+ *  "div" по-умолчанию имеет свойствo "display: block"
+ *  flow - устарело
+ *  grid (bootstrap) и flex - более новые (для выравнивания)
+ */
+
+ @font-face {
+    font-family: Gotham;
+    src: url("../fonts/Gotham-Bold.otf")
+ }
+ @font-face {
+    font-family: Proxima;
+    src: url("../fonts/proximanova-regular.otf")
+ }
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+img.logo {
+  width: 100px;
+  margin: 30px 0 0 0;  
+}
+
+.container {
+  width: 900px;   /* w900 */
+  margin: 0 auto; /* m0-a*/
+}
+
+/* TEAM */
+.team {
+  background-color: #f3f3f3; 
+}
+.team__inner {
+  text-align: center;
+}
+.team__title {
+  font-family: Gotham;
+  font-size: 30px;
+  font-family: "Gotham";
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 50px;
+  margin: 0;
+  /* padding-top: 50px; */
+}
+.team__text {
+  font-family: Proxima;
+  font-size: 16px;
+  font-family: "Proxima Nova";
+  color: rgb(90, 90, 90);
+  line-height: 25px; 
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 540px;
+}
+.team__line {
+  width: 184px;
+  height: 3px;
+  background-color: #303030;
+  margin: 0 auto; /* m0-a */
+}
+
+/* ITEM */
+.item__title {
+  font-family: "Gotham";
+  font-size: 16px;
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 16px;
+  margin: 0 0 10px 0;
+}
+.item__text {
+  font-family: "Georgia";
+  font-size: 12px;
+  color: rgb(48, 48, 48);
+  font-style: italic;
+  line-height: 12px;
+  margin: 0 0 20px 0;
+}
+.item {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 1, 1, 0.2); 
+  padding: 20px 35px;
+  min-width: 210px;
+}
+.item__img {
+margin-bottom: 10px;
+}
+
+/* CARD */
+
+.fa-brands  {
+  font-size: 20px;
+  color: #7f7f7f;
+  margin: 0 10px;  
+}
+
+.cards {
+  display: flex;
+    justify-content: space-between; /* выровнять по краям экрана */
+    padding-bottom: 80px;
+    padding-top: 55px;
+}
+
+.icons {
+
+}
+
+.fa-brands {
+
+}
+
+.fa-twitter {
+
+}
+
+.fa-linkedin-in {
+
+}
+
+.fa-dribbble {
+
+}
+
+.fa-skype {
+
+}
+
+
+/*-----------------------------------------
+.sgi-circle {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  border: 3px solid  rgb(227 181 120);
+  border-radius: 50%;
+}
+---------------------------------------------
+ PSD CSS
+---------------------------------------------
+ .Rectangle_3 {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px 0px rgba(0, 1, 1, 0.2);
+  position: absolute;
+  left: 150px;
+  top: 242px;
+  width: 210px;
+  height: 210px;
+  z-index: 33;
+}
+.team {
+  font-size: 30px;
+  font-family: "Gotham";
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+.We_are_a_hard_working_group__who_s_aim_is_to_li {
+  font-size: 16px;
+  font-family: "Proxima Nova";
+  color: rgb(90, 90, 90);
+  line-height: 1.563;
+  text-align: center;
+  position: absolute;
+  left: 333.937px;
+  top: 141.098px;
+  z-index: 43;
+}
+.naME_sURNAME {
+  font-size: 16px;
+  font-family: "Gotham";
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 3.125;
+  text-align: center;
+  position: absolute;
+  left: 184.937px;
+  top: 338px;
+  z-index: 34;
+}
+.Lead_Developer {
+  font-size: 12px;
+  font-family: "Georgia";
+  color: rgb(48, 48, 48);
+  font-style: italic;
+  line-height: 4.167;
+  text-align: center;
+  position: absolute;
+  left: 213.206px;
+  top: 413.841px;
+  z-index: 35;
+}
+-------------------------------------------*/

@@ -1,0 +1,109 @@
+/****************************************************************************************
+ * style.css
+ * --------------------------------------------------------------------------------------
+ * Visual Studio Code
+ * HTML, CSS, JavaScript
+ * --------------------------------------------------------------------------------------
+ * Язык CSS для новичков ITDoctor (2022)
+ *
+ * Уроки по языку CSS собраны в одном плейлисте для вашего удобства. 
+ * Тут вы сможете легко выучить язык CSS3 начиная с основ и 
+ * завершая полным пониманием каскадных таблиц стилей * CSS. 
+ * Изучите много полезных свойств.
+ *
+ * https://www.youtube.com/playlist?list=PLuY6eeDuleINJ5hIlBJWopSWHWDJYz_XW
+ *
+ * --------------------------------------------------------------------------------------
+ * CSS GRADIENT (1)
+ * https://cssgradient.io
+ *
+ * Gradient Constructor (2)
+ * https://www.colorzilla.com/gradient-editor/
+ *
+ * Lorem Ipsum - Generator
+ * https://ru.lipsum.com/
+ *
+ * ---------------------------------------------------------------------------------------
+ * ICONS:  
+ *
+ * Fontello - icon fonts generator (1)
+ * https://fontello.com/
+ *
+ * FONT AWESOME ICONS (2) - 6.4.2 (2023-09)
+ * https://fontawesome.com/
+ * https://fontawesome.com/docs/web/setup/use-kit
+ * https://fontawesome.com/v4/icons/
+ *
+ * ---------------------------------------------------------------------------------------
+ * VS CODE:
+ * ALT+SHIFT+F - авто-выравнивание СSS-кода 
+ * ALT+D - дублирование
+ * ALT+Z - перенос строки 
+ * CTRL+SPACE - браузер для файлов
+ * ---------------------------------------------------------------------------------------
+ * VS HTML to CSS
+ * Cope-Paste classes from HTML to CSS (CTRL+X + CTRL+V)
+ * ---------------------------------------------------------------------------------------
+ * p20-auto-20 - padding
+ * m30-auto - margin
+ * lorem50 - шаблонный текст
+ * ****************************************************************************************
+ * Writing & Modification by sgiman (SCS) @ 2023-09
+ */
+
+/*
+ *  Приоритет: свеху-вниз!!!
+ *  "div" по-умолчанию имеет свойствo "display: block"
+ *  flow - устарело
+ *  grid (bootstrap) и flex - более новые 
+ */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.box__inner {
+    text-align: center;
+}
+
+h1 {
+    margin: 80px;
+    max-width: 520px;
+    margin: 0px auto 30px; /* ВЫРАВНИВАНИЕ: сверху=0, по-бокам=auto; снизу=30 */
+    line-height: 36px;
+    font-weight: normal;
+}
+
+p {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    line-height: 30px;
+}
+
+.icons-box {
+    margin-bottom: 60px;
+}
+
+.box__inner img {
+    margin-top: 80px;
+}
+
+/* === TEST === */
+/*
+.box {
+    border: 1px solid red;
+}
+*/
+
+.icons-box i.fa {   /* icons-box i.fa - для более точного выбора элемента */
+    color: rgb(20, 144, 153);
+    font-size: 80px;
+    margin: 0 25px; /* отступы для иконок */
+}
+

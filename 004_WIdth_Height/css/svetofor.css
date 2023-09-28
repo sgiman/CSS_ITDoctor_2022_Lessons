@@ -1,0 +1,17 @@
+/* SVETOFOR */
+
+.svetofor div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.red {
+    background-color: red;
+}
+.orange {
+    background-color: orange;    
+}
+.green {
+    background-color: green;
+}
+

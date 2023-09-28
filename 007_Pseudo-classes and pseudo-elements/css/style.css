@@ -1,0 +1,115 @@
+/****************************************************************************************
+ * style.css
+ * --------------------------------------------------------------------------------------
+ * Visual Studio Code
+ * HTML, CSS, JavaScript
+ * --------------------------------------------------------------------------------------
+ * Язык CSS для новичков ITDoctor (2022)
+ *
+ * Уроки по языку CSS собраны в одном плейлисте для вашего удобства. 
+ * Тут вы сможете легко выучить язык CSS3 начиная с основ и 
+ * завершая полным пониманием каскадных таблиц стилей * CSS. 
+ * Изучите много полезных свойств.
+ *
+ * https://www.youtube.com/playlist?list=PLuY6eeDuleINJ5hIlBJWopSWHWDJYz_XW
+ *
+ *----------------------------------------------------------------------------------------
+ * VS CODE:
+ * ALT+SHIFT+F - авто-выравнивание СSS-кода 
+ * ALT+D - дублирование
+ * ALT-Z - перенос строки 
+ * CTRL+SPACE - браузер для файлов
+ *----------------------------------------------------------------------------------------
+ * p20-auto-20 - padding
+ * m30-auto - margin
+ * lorem50 - шаблонный текст
+ * ****************************************************************************************
+ * Writing & Modification by sgiman (SCS) @ 2023-09
+ */
+
+/*
+ *  Приоритет: свеху-вниз!!!
+ */
+
+ * {
+    box-sizing: border-box;
+    font-size: 24px;
+ }
+
+ button {
+    cursor: pointer;    /* для "a" - задан по-умолчанию */ 
+    /* cursor: ur(); */
+    color: white;
+    background-color: orange;
+    padding: 5px 10px 5px 10px; /* Сверху | Справа | Снизу | Слева */
+ }
+
+ a {
+    color: blue;
+ }
+ 
+ a:hover {
+    text-decoration: none;
+    color: red;
+ }
+
+ p:hover {
+    text-decoration:underline;
+    color: red;
+    cursor: pointer;
+ }
+
+/* для тега */
+ /*
+ ul li:nth-child(3) {
+    color: green;
+ }
+*/
+
+/* для класса */
+.menu li:nth-child(3) {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+ }
+ .menu li:first-child {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+ }
+ .menu li:last-child {
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
+ /* нечётные */
+ .menu2 li:nth-child(odd) {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+ /* чётные */
+ .menu2 li:nth-child(even) {
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* для таблицы (чётные) */
+table tr:nth-child(even) {
+    color: white;
+    background-color: #333;
+}
+
+/* добавить в начало */
+div::before {
+    /* content: "new"; */
+    content: "\00A9";   /* Copyright */
+    color: red;
+}
+/* добавить в конец */
+div::after {
+    content:" - AFTER";
+    color: green;
+}

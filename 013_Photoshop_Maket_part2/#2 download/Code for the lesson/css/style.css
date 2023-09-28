@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/Gotham-Bold.otf)
+}
+@font-face {
+    font-family: Proxima;
+    src: url(../fonts/proximanova-regular.otf)
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+.team {
+    background-color: #f3f3f3;  
+}
+.team__inner {
+    text-align: center;
+}
+.team__title {
+    font-size: 30px;
+    font-family: "Gotham";
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px; 
+    margin: 0;
+    padding-top: 50px;
+}
+.team__line {
+    width: 184px;
+    height: 3px;
+    background-color: #303030;
+    margin: 0 auto;
+}
+.team__text {
+    padding-top: 30px;
+    font-size: 16px;
+    font-family: "Proxima";
+    color: rgb(90, 90, 90);
+    line-height: 25px; 
+    margin: 0 auto; 
+    width: 540px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;  
+    padding-bottom: 80px;
+    padding-top: 55px;
+}
+.item {
+    text-align: center;
+    background-color: #fff;
+    min-width: 210px;
+    padding: 20px 35px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 1, 1, 0.2); 
+}
+.item__img {
+    margin-bottom: 10px;
+}
+.item__title {
+    font-size: 16px;
+    font-family: "Gotham";
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 16px;
+    margin: 0 0 10px 0;
+}
+.item__text {
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(48, 48, 48);
+    font-style: italic;
+    line-height: 12px;
+    margin: 0 0 10px 0;
+}
+.icons {
+
+}
+.fa {
+    font-size: 20px;    
+    color: #7f7f7f;
+    margin: 0 10px;
+}
+.fa-twitter {
+
+}
+.fa-linkedin {
+
+}
+.fa-dribbble {
+
+}
+.fa-skype {
+
+}

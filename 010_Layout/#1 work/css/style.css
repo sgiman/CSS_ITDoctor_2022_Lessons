@@ -1,0 +1,132 @@
+/****************************************************************************************
+ * style.css
+ * --------------------------------------------------------------------------------------
+ * Visual Studio Code
+ * HTML, CSS, JavaScript
+ * --------------------------------------------------------------------------------------
+ * Язык CSS для новичков ITDoctor (2022)
+ *
+ * Уроки по языку CSS собраны в одном плейлисте для вашего удобства. 
+ * Тут вы сможете легко выучить язык CSS3 начиная с основ и 
+ * завершая полным пониманием каскадных таблиц стилей * CSS. 
+ * Изучите много полезных свойств.
+ *
+ * https://www.youtube.com/playlist?list=PLuY6eeDuleINJ5hIlBJWopSWHWDJYz_XW
+ *
+ * --------------------------------------------------------------------------------------
+ * CSS GRADIENT (1)
+ * https://cssgradient.io
+ *
+ * Gradient Constructor (2)
+ * https://www.colorzilla.com/gradient-editor/
+ *
+ * Fontello - icon fonts generator
+ * https://fontello.com/
+ *
+ * ---------------------------------------------------------------------------------------
+ * VS CODE:
+ * ALT+SHIFT+F - авто-выравнивание СSS-кода 
+ * ALT+D - дублирование
+ * ALT+Z - перенос строки 
+ * CTRL+SPACE - браузер для файлов
+ * ---------------------------------------------------------------------------------------
+ * VS HTML to CSS
+ * Cope-Paste classes from HTML to CSS (CTRL+X + CTRL+V)
+ * ---------------------------------------------------------------------------------------
+ * p20-auto-20 - padding
+ * m30-auto - margin
+ * lorem50 - шаблонный текст
+ * ****************************************************************************************
+ * Writing & Modification by sgiman (SCS) @ 2023-09
+ */
+
+/*
+ *  Приоритет: свеху-вниз!!!
+ *  "div" по-умолчанию имеет свойствo "display: block"
+ *  flow - устарело
+ *  grid (bootstrap) и flex - более новые 
+ */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: white; */
+}
+
+/* root */
+.box {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(133,65,1,1) 100%);
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.box__inner {
+    height: 350px;                  /* h300 */
+    display: flex;
+    justify-content: space-around;  /* отделить на равные отступы */
+    align-items: center;            /* по центру (верт) */
+}
+
+.item {
+    text-align: center;             /* содержимое эл. по центру */
+}
+
+/*
+.number {
+    color: #eee;
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+}
+*/
+
+.number {
+    color: #eee;
+    font-size: 48px;
+    font-family: system-ui;
+    font-weight: 100;
+}
+
+/*
+.text {    
+    color: rgb(245 203 148);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+*/
+.text {
+    color: rgb(245 203 148);
+    font-size: 18px;
+    font-family: system-ui;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #eee;
+    margin: 0 auto;
+}
+
+.scs-circle {
+    margin: 0 auto 15px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid  rgb(227 181 120);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;    /* центрирование по горизонтали */
+    align-items: center;        /* центрирование по вертикали */
+}
+
+.item i {
+    color:  rgb(227 181 120); 
+    font-size: 40px;
+}

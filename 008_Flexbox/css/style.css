@@ -1,0 +1,85 @@
+/****************************************************************************************
+ * style.css
+ * --------------------------------------------------------------------------------------
+ * Visual Studio Code
+ * HTML, CSS, JavaScript
+ * --------------------------------------------------------------------------------------
+ * Язык CSS для новичков ITDoctor (2022)
+ *
+ * Уроки по языку CSS собраны в одном плейлисте для вашего удобства. 
+ * Тут вы сможете легко выучить язык CSS3 начиная с основ и 
+ * завершая полным пониманием каскадных таблиц стилей * CSS. 
+ * Изучите много полезных свойств.
+ *
+ * https://www.youtube.com/playlist?list=PLuY6eeDuleINJ5hIlBJWopSWHWDJYz_XW
+ *
+ *----------------------------------------------------------------------------------------
+ * VS CODE:
+ * ALT+SHIFT+F - авто-выравнивание СSS-кода 
+ * ALT+D - дублирование
+ * ALT-Z - перенос строки 
+ * CTRL+SPACE - браузер для файлов
+ *----------------------------------------------------------------------------------------
+ * p20-auto-20 - padding
+ * m30-auto - margin
+ * lorem50 - шаблонный текст
+ * ****************************************************************************************
+ * Writing & Modification by sgiman (SCS) @ 2023-09
+ */
+
+/*
+ *  Приоритет: свеху-вниз!!!
+ *  "div" по-умолчанию имеет свойствo "display: block"
+ *  flow - устарело
+ *  grid (bootstrap) и flex - более новые 
+ */
+
+* {
+    font-size: 24px;
+}
+
+/* Default */
+div {
+    display: block;
+}
+
+/*****************
+       FLEX
+*****************/
+div.parent {
+    display: flex;      /* все блоки в одну строку */
+    flex-wrap: wrap;    /* перенос строки блоков */
+    height: 250px;
+    border: 1px solid red;
+    /* flex-direction: column;   в колонку */
+    /* justify-content: center;  выровнять по центру */
+    /* justify-content: space-between; /* выровнять по краям родителя */
+    /* justify-content: space-around  выровнять по центру с отступами по краям */
+    /* justify-content: flex-end /* выровнять по левому краю */
+    /* justify-content: flex-start  выровнять по правому краю */
+    justify-content: center;        /* выравнивание по вертикали */
+    align-items: center;            /* выравнивание по горизонтали */
+    /* justify-content: flex-end; */
+    /* align-content: center;   выравнивание всех элементов внутри родительского */ 
+    /* align-content: space-between;  прилипание к верху и к низу */
+    align-content: space-around;    /* с разными отступами со всех сторон */ 
+    /* align-content: space-evenly  /* с одинаковыми отступами со всех сторон */ 
+}
+
+
+/* выбрать 3-й элемент ul>li */
+/* переместить на первое место (в начало) */
+/* order: 0  не перемещать */
+/* order: -1; переместить в конец */
+.parent div:nth-child(3) { 
+    color: red;
+    order: -1;      
+}
+
+.parent div:nth-child(4) {
+    color:blue;
+    order: 1;
+    /* align-self: flex-end; */
+    /* align-self: self-start; */
+    /* align-self:center; */
+}
