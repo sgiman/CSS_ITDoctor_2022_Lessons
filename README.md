@@ -10,7 +10,7 @@ Lessons on the CSS language are collected in one playlist for your convenience.
 
 https://www.youtube.com/playlist?list=PLuY6eeDuleINJ5hIlBJWopSWHWDJYz_XW
 
+![CSS](https://github.com/sgiman/CSS_ITDoctor_2022/assets/7030369/6aadf985-8776-4d32-b7aa-71fd24550eee)
 
-![CSS](https://github.com/sgiman/CSS_ITDoctor_2022/assets/7030369/3a07b63b-59ef-4d63-9671-36b56a7209b4)
 
 **Sgiman @ 2023**
